@@ -6,11 +6,11 @@ public class JumpSearch {
         while(l+jump <= r && arr[l+jump] <= tar){
             l += jump;
         }
+        
         for(int i = 0; i<=jump && i+l<r ;i++){
             if(arr[i+l] == tar){
                 return i+l;
             }
-            // System.out.println(i+l);
         }
         return -1;
     }

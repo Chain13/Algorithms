@@ -18,6 +18,9 @@ public class BinarySearch {
     }
 
     static int search2(int arr[], int tar, int l, int r) {
+        if(l>r){
+            return -1;
+        }
         int mid = (r + l) / 2;
         if (arr[mid] == tar) {
             return mid;
